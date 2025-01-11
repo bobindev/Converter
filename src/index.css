@@ -1,0 +1,76 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: mediumslateblue;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+select,
+input,
+button {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+hr {
+  background-color: #fff;
+  width: 80%;
+  margin: 1rem auto;
+}
+.unit .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* space between the two buttons */
+  justify-content: center; /* center them horizontally */
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.converter-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.converter-input {
+  flex: 1; /* Fill remaining horizontal space */
+  padding: 0.5rem; /* Spacing inside the box */
+  margin-left: 2rem; /* Space between input and unit label */
+}
+
+.main-label {
+  width: 3rem; /* Fixed width so labels align */
+  margin-right: 0.5rem; /* Space between label and input */
+  font-weight: bold;
+}
